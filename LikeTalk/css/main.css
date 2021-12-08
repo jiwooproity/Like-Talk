@@ -1,0 +1,156 @@
+.wrapper {
+    width: 450px;
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1),
+                0px 0px 80px -150px rgba(0, 0, 0, 0.1);
+
+    background-color: white;
+}
+
+.header {
+    width: 100%;
+    height: 40px;
+
+    position: relative;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    background-color: #202124;
+}
+
+.logo {
+    width: 150px;
+    line-height: 32px;
+
+    padding-left: 10px;
+
+    text-align: left;
+
+    font-size: 15px;
+    letter-spacing: 0.1em;
+
+    position: absolute;
+    bottom: 0;
+    left: 60px;
+
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+
+    background-color: #333639;
+    color: #fff;
+}
+
+.header div {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+
+    transform: translateY(-50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mac span {
+    width: 10px;
+    height: 10px;
+
+    margin-right: 5px;
+
+    border-radius: 50%;
+}
+
+.mac span:nth-child(1) {
+    background-color: #ec665a;
+}
+
+.mac span:nth-child(2) {
+    background-color: #dfc14c;
+}
+
+.mac span:nth-child(3) {
+    background-color: #73c347;
+}
+
+.header__bottom {
+    width: 100%;
+    height: 30px;
+
+    position: relative;
+
+    background-color: #333639;
+}
+
+.header__bottom__link {
+    width: 70%;
+    height: 20px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 7.5px;
+
+    background-color: #202124;
+}
+
+.header__bottom__detail {
+    width: 60%;
+    height: 22px;
+
+    position: absolute;
+    top: 50%;
+    left: 10px;
+
+    transform: translateY(-50%);
+}
+
+.header__bottom__detail span {
+    font-size: 5px;
+}
+
+.header__bottom__detail span:nth-child(1) {
+    color: #fff;
+}
+
+.header__bottom__detail span:nth-child(2) {
+    color: #828588;
+}
+
+.form {
+    padding: 0px 30px 20px 30px;
+}
+
+.field {
+    padding-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.field label {
+    font-size: 15px;
+    font-weight: 700;
+
+    padding: 0px 0px 10px 0px;
+}
+
+.field input {
+    padding-bottom: 5px;
+
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.field input::placeholder {
+    font-size: 8px;
+}
+
+.field input:focus {
+    outline: none;
+}
