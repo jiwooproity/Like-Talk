@@ -1,0 +1,147 @@
+.chat__wrapper {
+    padding: 20px 20px 0px 20px;
+}
+
+.chat__header {
+    padding-bottom: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat__content {
+    display: flex;
+    align-items: center;
+}
+
+.chat__wrapper img {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.chat__content img {
+    width: 50px;
+    height: 50px;
+}
+
+.chat__content i {
+    padding-right: 15px;
+}
+
+.chat__box {
+    height: 550px;
+
+    border-radius: 5px;
+
+    padding: 0px 20px 0px 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgb(243, 243, 243);
+
+    overflow-y: auto;
+}
+
+.chat__box::-webkit-scrollbar {
+    display: none;
+}
+
+.chat__outgoing {
+    margin-top: 20px;
+}
+
+.chat__outgoing p {
+    padding: 8px 16px;
+
+    margin-left: auto;
+    max-width: calc(100% - 130px);
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.1),
+                0px 16px 16px -16px rgba(0, 0, 0, 0.3);
+
+    color: var(--white);
+    background: var(--black);
+
+    word-break: break-all;
+}
+
+.chat__incoming {
+    margin-top: 20px;
+
+    display: flex;
+    align-items: center;
+}
+
+.chat__incoming p {
+    padding: 8px 16px;
+    
+    margin-right: auto;
+    max-width: calc(100% - 100px);
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.1),
+                0px 16px 16px -16px rgba(0, 0, 0, 0.3);
+
+    color: var(--black);
+    background: var(--white);
+
+    word-break: break-all;
+}
+
+.chat__incoming img {
+    width: 35px;
+    height: 35px;
+
+    margin-right: 10px;
+}
+
+.typing__form {
+    width: 100%;
+
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.typing__form input {
+    width: 100%;
+
+    padding: 15px;
+
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.typing__form input:focus {
+    outline: none;
+}
+
+.typing__form button {
+    padding: 16px;
+
+    border: none;
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.typing__form button i {
+    font-size: 15px;
+}

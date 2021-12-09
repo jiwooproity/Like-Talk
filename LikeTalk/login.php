@@ -9,7 +9,7 @@
     </head>
     <body>
         <div class="wrapper">
-            <section class="form__signup">
+            <section class="form__login">
                 <header class="header">
                     <div class="logo">
                         <span>LIKETALK</span>
@@ -45,12 +45,8 @@
                     <form action="#">
                         <div class="error__text">에러 메세지 표시 공간</div>
                         <div class="field">
-                            <label>First Name</label>
-                            <input type="text" placeholder="성을 입력해주세요."/>
-                        </div>
-                        <div class="field">
-                            <label>Last Name</label>
-                            <input type="text" placeholder="이름을 입력해주세요."/>
+                            <label>Email</label>
+                            <input type="email" placeholder="이메일을 입력해주세요."/>
                         </div>
                         <div class="field">
                             <label>Password</label>
@@ -58,31 +54,17 @@
                             <i class="fas fa-eye"></i>
                         </div>
                         <div class="field">
-                            <label>Password Confirm</label>
-                            <input type="password" placeholder="비밀번호를 한번 더 입력해주세요."/>
-                            <i class="fas fa-eye"></i>
-                        </div>
-                        <div class="field">
-                            <label>Email</label>
-                            <input type="email" placeholder="이메일을 입력해주세요."/>
-                        </div>
-                        <div class="field">
-                            <label>Profile</label>
-                            <input type="file"/>
-                        </div>
-                        <div class="field">
-                            <input type="submit" value="회원가입"/>
+                            <input type="submit" value="로그인"/>
                         </div>
                     </form>
                     <div class="link">
-                        <span>이미 가입하셨습니까?</span>
-                        <a href="#">로그인</a>
+                        <span>아이디가 없으신가요?</span>
+                        <a href="#">회원가입</a>
                     </div>
                 </div>
             </section>
         </div>
 
-        <script src="js/password-show-hide.js"></script>
         <script src="https://kit.fontawesome.com/ef8b1ace87.js" crossorigin="anonymous"></script>
     </body>
 </html>

@@ -1,0 +1,170 @@
+.user__wrapper {
+    padding: 20px 30px 20px 30px;
+}
+
+.user__header {
+    padding-bottom: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper img {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.content img {
+    width: 50px;
+    height: 50px;
+}
+
+.user__detail {
+    margin-left: 10px;
+}
+
+.user__detail span {
+    font-size: 20px;
+}
+
+.user__detail p {
+    padding-top: 5px;
+    font-size: 12px;
+}
+
+.logout__btn {
+    text-decoration: none;
+
+    padding: 10px;
+
+    border-radius: 5px;
+
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.search {
+    margin-top: 20px;
+
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search .text {
+    font-size: 13px;
+}
+
+.search input {
+    width: calc(100% - 50px);
+    height: 35px;
+
+    position: absolute;
+
+    padding: 10px;
+
+    border-right: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.search button {
+    width: 50px;
+    height: 35px;
+
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    background-color: var(--black);
+}
+
+.search button i {
+    font-size: 15px;
+
+    color: var(--white);
+}
+
+.user__list {
+    width: 100%;
+    height: 380px;
+    
+    overflow-y: auto;
+}
+
+.user__list::-webkit-scrollbar {
+    display: none;
+}
+
+.user__list a {
+    text-decoration: none;
+
+    width: 100%;
+
+    padding: 20px 0px 20px 0px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+    color: var(--black);
+}
+
+.user__list__content {
+    display: flex;
+}
+
+.user__list__content img {
+    width: 35px;
+    height: 35px;
+}
+
+.user__list__detail {
+    margin-left: 10px;
+}
+
+.user__list__detail span {
+    font-size: 15px;
+}
+
+.user__list__detail p {
+    font-size: 12px;
+}
+
+.status-dot {
+    font-size: 12px;
+
+    padding-top: 5px;
+    padding-right: 8px;
+
+    color: rgb(108, 238, 173);
+}
+
+.status-dot i {
+    text-shadow: 0px 0px 5px rgb(55, 207, 131),
+                 0px 0px 10px rgb(49, 173, 111);
+}
+
+@media (max-width:768px) {
+    .users {
+        width: 100%;
+        height: 100vh;
+    }
+}

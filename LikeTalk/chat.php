@@ -9,7 +9,7 @@
     </head>
     <body>
         <div class="wrapper">
-            <section class="form__signup">
+            <section class="users">
                 <header class="header">
                     <div class="logo">
                         <span>LIKETALK</span>
@@ -42,47 +42,42 @@
                     </div>
                 </div>
                 <div class="media__height">
-                    <form action="#">
-                        <div class="error__text">에러 메세지 표시 공간</div>
-                        <div class="field">
-                            <label>First Name</label>
-                            <input type="text" placeholder="성을 입력해주세요."/>
+                    <div class="chat__wrapper">
+                        <div class="chat__header">
+                            <div class="chat__content">
+                                <i class="fas fa-chevron-left"></i>
+                                <img src="img/yujeong.jpg"/>
+                                <div class="user__detail">
+                                    <span>So Jiwoo</span>
+                                    <p>Online</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="field">
-                            <label>Last Name</label>
-                            <input type="text" placeholder="이름을 입력해주세요."/>
+
+                        <div class="chat__box">
+                            <div class="chat__outgoing">
+                                <div calss="chat__outdetail">
+                                    <p>Hello gasdasdasdasdasdsadasdsadsadd</p>
+                                </div>
+                            </div>
+                            <div class="chat__incoming">
+                                <img src="img/yujeong.jpg">
+                                <div calss="chat__indetail">
+                                    <p>Hello World I Like Game and Programming</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="field">
-                            <label>Password</label>
-                            <input type="password" placeholder="비밀번호를 입력해주세요."/>
-                            <i class="fas fa-eye"></i>
-                        </div>
-                        <div class="field">
-                            <label>Password Confirm</label>
-                            <input type="password" placeholder="비밀번호를 한번 더 입력해주세요."/>
-                            <i class="fas fa-eye"></i>
-                        </div>
-                        <div class="field">
-                            <label>Email</label>
-                            <input type="email" placeholder="이메일을 입력해주세요."/>
-                        </div>
-                        <div class="field">
-                            <label>Profile</label>
-                            <input type="file"/>
-                        </div>
-                        <div class="field">
-                            <input type="submit" value="회원가입"/>
-                        </div>
-                    </form>
-                    <div class="link">
-                        <span>이미 가입하셨습니까?</span>
-                        <a href="#">로그인</a>
+                    </div>
+                    <div class="typing__area">
+                        <form class="typing__form" action="#">
+                            <input type="text" placeholder="메시지를 입력해주세요.">
+                            <button><i class="fab fa-telegram-plane"></i></button>
+                        </form>
                     </div>
                 </div>
             </section>
         </div>
 
-        <script src="js/password-show-hide.js"></script>
         <script src="https://kit.fontawesome.com/ef8b1ace87.js" crossorigin="anonymous"></script>
     </body>
 </html>
