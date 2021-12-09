@@ -212,6 +212,8 @@ form {
 
     background-color: #f8d7da;
     color: #662d33;
+
+    display: none;
 }
 
 .field {
@@ -251,7 +253,7 @@ form {
 }
 
 .field input::placeholder {
-    font-size: 8px;
+    font-size: 12px;
 }
 
 .field input:focus {
@@ -265,9 +267,12 @@ form {
     padding: 12px;
 
     border-radius: 5px;
+    -webkit-appearance: none;
 
     background-color: var(--gray);
     color: var(--white);
+
+    cursor: pointer;
 
     transition: background-color 0.2s ease-in-out;
 }
@@ -277,7 +282,7 @@ form {
 }
 
 .link {
-    font-size: 11px;
+    font-size: 14px;
 
     padding: 0px 30px 20px 30px;
 }
@@ -290,6 +295,11 @@ form {
     color: #284fc4;
 }
 
+.once.active i::before {
+    content: "\f070";
+    color: #333;
+}
+
 .field i {
     font-size: 13px;
 
@@ -300,6 +310,11 @@ form {
     color: var(--pastel_gray);
 
     cursor: pointer;
+}
+
+.field i.active::before {
+    content: "\f070";
+    color: #333;
 }
 
 @media (max-width:768px) {

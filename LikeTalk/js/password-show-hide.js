@@ -5,8 +5,10 @@ toggleBtn.map((item, index) => {
     item.addEventListener('click', () => {
         if(passwordField[index].type == 'password') {
             passwordField[index].type = 'text';
+            toggleBtn[index].classList.add("active");
         } else {
             passwordField[index].type = 'password';
+            toggleBtn[index].classList.remove("active");
         }
     })
 })
