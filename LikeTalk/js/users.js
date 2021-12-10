@@ -14,8 +14,10 @@ searchBar.onkeyup = () => {
 
     if(searchTerm != "") {
         searchBar.classList.add("active");
+        searchBtn.classList.add("active");
     } else {
         searchBar.classList.remove("active");
+        searchBtn.classList.remove("active");
     }
 
     let xhr = new XMLHttpRequest(); // creating XML object

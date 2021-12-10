@@ -18,7 +18,7 @@
                     <div class="user__header">
                         <?php
                             include_once "php/config.php";
-                            $sql = mysqli_query($conn, "SELECT * FROM user_list WHERE unique_id = '{$_SESSION['unique_id']}'");
+                            $sql = mysqli_query($conn, "SELECT * FROM user_list WHERE unique_id = {$_SESSION['unique_id']}");
 
                             if(mysqli_num_rows($sql) > 0) {
                                 $row = mysqli_fetch_assoc($sql);
@@ -31,7 +31,7 @@
                                 <p><?php echo $row['status']?></p>
                             </div>
                         </div>
-                        <a class="logout__btn" href="#">로그아웃</a>
+                        <a class="logout__btn" href="php/logout.php?logout_id=<?php echo $row['unique_id']?>">로그아웃</a>
                     </div>
 
                     <div class="search">

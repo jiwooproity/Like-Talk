@@ -21,7 +21,7 @@
                                 include_once "php/config.php";
 
                                 $user_id = mysqli_real_escape_string($conn, $_GET['user_id']);
-                                $sql = mysqli_query($conn, "SELECT * FROM user_list WHERE unique_id = '{$user_id}'");
+                                $sql = mysqli_query($conn, "SELECT * FROM user_list WHERE unique_id = {$user_id}");
                                 if(mysqli_num_rows($sql) > 0) {
                                     $row = mysqli_fetch_assoc($sql);
                                 }
@@ -36,22 +36,13 @@
                     </div>
 
                     <div class="chat__box">
-                        <div class="chat__outgoing">
-                            <div calss="chat__outdetail">
-                                <p>Hello gasdasdasdasdasdsadasdsadsadd</p>
-                            </div>
-                        </div>
-                        <div class="chat__incoming">
-                            <img src="img/<?php echo $row['img']?>">
-                            <div calss="chat__indetail">
-                                <p>Hello World I Like Game and Programming</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="typing__area">
                     <form class="typing__form" action="#">
-                        <input type="text" placeholder="메시지를 입력해주세요.">
+                        <input type="text" name="outgoing_id" value="<?php echo $_SESSION['unique_id'];?>" hidden>
+                        <input type="text" name="incoming_id" value="<?php echo $user_id;?>" hidden>
+                        <input class="text__field" name="message" type="text" placeholder="메시지를 입력해주세요.">
                         <button><i class="fab fa-telegram-plane"></i></button>
                     </form>
                 </div>

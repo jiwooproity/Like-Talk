@@ -2,11 +2,14 @@
     session_start();
     include_once "config.php";
 
-    $sql = mysqli_query($conn, "SELECT * FROM user_list");
+    $outgoing_id = $_SESSION['unique_id'];
+    $sql = mysqli_query($conn, "SELECT * FROM user_list WHERE NOT unique_id = {$outgoing_id}");
     $output = "";
 
     if(mysqli_num_rows($sql) == 0) {
-        $output .= "채팅을 사용하고 있는 유저가 없습니다.";
+        $output .= '<div class="none__text">
+                        <span>채팅을 사용하고 있는 유저가 없습니다.</span>
+                    </div>';
     } else if(mysqli_num_rows($sql) > 0) {
         include "data.php";
     }
