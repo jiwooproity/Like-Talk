@@ -17,23 +17,49 @@
 
         if(mysqli_num_rows($query) > 0) {
             while($row = mysqli_fetch_assoc($query)) {
-                if($row['outgoing_id'] === $outgoing_id) {
-                    $output .= '<div class="chat__outgoing">
-                                    <div class="chat__outwidth">
-                                        <div calss="chat__outdetail">
-                                            <p>' . $row['msg'] . '</p>
+                if(substr($row['msg'], 0, 4) == "http") {
+                    if($row['outgoing_id'] === $outgoing_id) {
+                        $output .= '<div class="chat__outgoing">
+                                        <div class="chat__outwidth">
+                                            <div calss="chat__outdetail">
+                                                <a href="' . $row['msg'] . '" target="_blank">' . $row['msg'] . '</a>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>';
+                                    </div>';
+                    } else {
+                        $output .= '<div class="chat__incoming">
+                                        <div class="chat__inwidth">
+                                            <div class="img__frame">
+                                            <img src="img/' . $row['img'] . '">
+                                            </div>
+                                            <div calss="chat__indetail">
+                                                <a href="' . $row['msg'] . '" target="_blank">' . $row['msg'] . '</a>
+                                            </div>
+                                        </div>
+                                    </div>';
+                    }
+
                 } else {
-                    $output .= '<div class="chat__incoming">
-                                    <div class="chat__inwidth">
-                                        <img src="img/' . $row['img'] . '">
-                                        <div calss="chat__indetail">
-                                            <p>' . $row['msg'] . '</p>
+                    if($row['outgoing_id'] === $outgoing_id) {
+                        $output .= '<div class="chat__outgoing">
+                                        <div class="chat__outwidth">
+                                            <div calss="chat__outdetail">
+                                                <p>' . $row['msg'] . '</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>';
+                                    </div>';
+                    } else {
+                        $output .= '<div class="chat__incoming">
+                                        <div class="chat__inwidth">
+                                            <div class="img__frame">
+                                                <img src="img/' . $row['img'] . '">
+                                            </div>
+                                            <div calss="chat__indetail">
+                                                <p>' . $row['msg'] . '</p>
+                                            </div>
+                                        </div>
+                                    </div>';
+                    }
                 }
             }
 

@@ -7,6 +7,14 @@ typingForm.onsubmit = (e) => {
     e.preventDefault();
 }
 
+chatBox.addEventListener('mouseover', () => {
+    chatBox.classList.add('active');
+});
+
+chatBox.addEventListener('mouseout', () => {
+    chatBox.classList.remove('active');
+})
+
 sendBtn.addEventListener('click', () => {
     let xhr = new XMLHttpRequest(); // creating XML object
     xhr.open("POST", "php/chat_insert.php", true);
@@ -31,6 +39,9 @@ setInterval(() => {
             if(xhr.status === 200) {
                 let data = xhr.response;
                 chatBox.innerHTML = data;
+                if(!chatBox.classList.contains('active')) {
+                    scrollBottom();
+                }
             }
         }
     }

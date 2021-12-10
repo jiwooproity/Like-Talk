@@ -25,7 +25,7 @@
                             }
                         ?>
                         <div class="content">
-                            <img src="img/<?php echo $row['img']?>" />
+                            <img src="img/<?php echo $row['img']?>"/>
                             <div class="user__detail">
                                 <span><?php echo $row['lname']?>님</span>
                                 <p><?php echo $row['status']?></p>

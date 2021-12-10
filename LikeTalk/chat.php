@@ -29,7 +29,7 @@
                             <a href="users.php"><i class="fas fa-chevron-left"></i></a>
                             <img src="img/<?php echo $row['img'] ?>" />
                             <div class="user__detail">
-                                <span><?php echo $row['fname'] . " " . $row['lname']?></span>
+                                <span><?php echo $row['fname'] . $row['lname']?></span>
                                 <p><?php echo $row['status']?></p>
                             </div>
                         </div>

@@ -38,7 +38,7 @@
 }
 
 .user__detail span {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .user__detail p {
@@ -183,6 +183,7 @@
 .user__list__detail p {
     padding: 2px 0px;
     font-size: 12px;
+    letter-spacing: 0.1em;
 }
 
 .status-dot {
