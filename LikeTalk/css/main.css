@@ -225,6 +225,89 @@ form {
     flex-direction: column;
 }
 
+.profile__frame {
+    width: 100%;
+    
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.delete__frame {
+    font-size: 12px;
+
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    display: none;
+
+    color: var(--white);
+}
+
+.profile__frame div span {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.profile__frame.active:hover .delete__frame {
+    display: block;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    cursor: pointer;
+}
+
+.profile__field {
+    width: 100%;
+    padding-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile__field label {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    padding: 0px 0px 10px 0px;
+}
+
+.input__profile {
+    position: relative;
+}
+
+.profile__field label img {
+    width: 60px;
+    height: 60px;
+
+    cursor: pointer;
+}
+
+.profile__field input[type="file"] {
+    display: none;
+}
+
 .field label {
     font-size: 15px;
     font-weight: 700;
