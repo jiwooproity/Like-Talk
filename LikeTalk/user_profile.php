@@ -3,7 +3,7 @@
 ?>
 <body>
     <div class="wrapper">
-        <section class="form__signup">
+        <section class="form__update">
             <?php
                 include_once "php/mac_header.php";
             ?>
@@ -51,6 +51,8 @@
             </div>
         </section>
     </div>
+    
+    <script src="js/update_profile.js"></script>
     <script src="https://kit.fontawesome.com/ef8b1ace87.js" crossorigin="anonymous"></script>
 </body>
 
