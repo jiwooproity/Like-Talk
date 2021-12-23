@@ -25,7 +25,7 @@
                             }
                         ?>
                         <div class="content">
-                            <img src="img/<?php echo $row['img']?>"/>
+                            <a href="user_profile.php?user_id=<?php echo $row['unique_id']?>"><img src="img/<?php echo $row['img']?>"/></a>
                             <div class="user__detail">
                                 <span><a href="user_profile.php?user_id=<?php echo $row['unique_id']?>"><?php echo $row['lname']?>님</a></span>
                                 <p><?php echo $row['status']?></p>
